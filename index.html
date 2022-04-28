@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+		<script type="text/javascript" defer src="index.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+		<script src="https://kit.fontawesome.com/a7bac80137.js" crossorigin="anonymous" defer ></script>
+		<noscript><p class="javascript-disabled">Your browser doesn't support javascript!</p></noscript>
+		<title>Mc</title>
+	</head>
+	<body>
+		<div id="moving-circle"></div>
+		<div id="first-bg">
+			<div></div>
+		</div>
+
+		<div id="middle"></div>
+
+		<div id="second-bg">
+			<div></div>
+		</div>
+
+		<aside id="menu">
+			<div id="top-menu">
+				<a class="link" href="#">
+					<img src="images/monstercat-logo-white.svg" id="logo-in-menu">
+				</a>
+				<div class="link" id="exit">
+					<ion-icon name="close-outline" class="menu-icon"></ion-icon>
+				</div>
+			</div>
+
+			<div id="middle-menu">
+				<div class="link amm expand">
+					<div>
+						<p>MUSIC</p>
+						<ion-icon name="chevron-forward-outline" class="more-icon"></ion-icon>
+					</div>
+					<div class="mmsub closed">
+						<a href="#" class="mmsublink">OUR MUSIC</a>
+						<a href="#" class="mmsublink">INSTINCT</a>
+						<a href="#" class="mmsublink">UNCAGED</a>
+						<a href="#" class="mmsublink">SILK</a>
+					</div>
+				</div>
+
+				<a class="link amm" href="#">
+					<p>ARTISTS</p>
+				</a>
+
+				<div class="link amm expand">
+					<div>
+						<p>ABOUT</p>
+						<ion-icon name="chevron-forward-outline" class="more-icon"></ion-icon>
+					</div>
+					<div class="mmsub closed">
+						<a href="#" class="mmsublink">ABOUT MONSTERCAT</a>
+						<a href="#" class="mmsublink">DIVERSITY & INCLUSION</a>
+						<a href="#" class="mmsublink">CODE OF ETHICS</a>
+						<a href="#" class="mmsublink">SILK</a>
+					</div>
+				</div>
+
+				<a class="link amm" href="#">
+					<p>NEWS</p>
+				</a>
+
+				<div class="link amm expand">
+					<div>
+						<p>EVENTS</p>
+						<ion-icon name="chevron-forward-outline" class="more-icon"></ion-icon>
+					</div>
+					<div class="mmsub closed">
+						<a href="#" class="mmsublink">MC EVENTS EXPERIENCE</a>
+						<a href="#" class="mmsublink">UPCOMING EVENTS</a>
+					</div>
+				</div>
+
+				<div class="link amm expand">
+					<div>
+						<p>PROGRAMMING</p>
+						<ion-icon name="chevron-forward-outline" class="more-icon"></ion-icon>
+					</div>
+					<div class="mmsub closed">
+						<a href="#" class="mmsublink">MonstercatTV</a>
+						<a href="#" class="mmsublink">CALL OF THE WILD</a>
+						<a href="#" class="mmsublink">SILK SHOWCASE</a>
+						<a href="#" class="mmsublink">UPCOMING SHOWS</a>
+					</div>
+				</div>
+
+				<a class="link amm" href="#">
+					<p>GOLD</p>
+				</a>
+
+				<a class="link amm" href="#">
+					<p>PARTNERS</p>
+				</a>
+
+				<a class="link amm" href="#">
+					<p>PRESS</p>
+				</a>
+
+				<a class="link amm" href="#">
+					<p>PLAYER</p>
+				</a>
+				<a class="link amm" href="#">
+					<p>SHOP</p>
+				</a>
+
+				<a class="link amm" href="#">
+					<p>LOST CIVILIZATION</p>
+				</a>
+			</div>
+
+			<div id="bottom-menu">
+				<div id="social-media2">
+					<a class="link" href="#"><ion-icon name="logo-instagram" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-tiktok" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-twitter" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-twitch" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-facebook" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-discord" class="icons"></ion-icon></a>
+					<a class="link" href="#"><img src="images/monstercat.svg" class="icons"></a>
+				</div>
+				<div id="sign-in-up">
+					<a class="link" href="#" id="sign-in">SIGN IN</a>&nbsp;
+					<span>OR <a class="link" href="#">SIGN UP</a></span>
+				</div>
+			</div>
+		</aside>
+
+		<div id="container">
+			<nav>
+				<div class="link"><img src="images/monstercat-logo.webp" id="logo"></div>
+				<aside id="social-media">
+					<a class="link" href="#"><ion-icon name="logo-instagram" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-tiktok" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-twitter" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-twitch" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-facebook" class="icons"></ion-icon></a>
+					<a class="link" href="#"><ion-icon name="logo-discord" class="icons"></ion-icon></a>
+					<a class="link" href="#"><img src="images/monstercat.svg" class="icons"></a>
+				</aside>
+				<div class="link" id="more"><ion-icon name="menu-outline"></ion-icon></div>
+			</nav>
+
+			<main id="main">
+				<header>
+					<div id="reverse">
+						<img src="images/cover1.webp" id="album-cover">
+						<p id="instinct"><span>Instinct</span> — Released May 22, 2020</p>
+					</div>
+					<div id="right">
+						<div>
+							<h3 id="title">LEVEL DAYS</h3>
+							<h4 id="artist">CONRO</h4>
+						</div>
+						<div id="artist-account">
+							<a class="link artist-pic" href="#">
+								<span id="landscape">
+									<img src="images/photo.webp" id="ppic1" alt="Conro">
+									<!-- <span class="dropup">CONRO</span> -->
+								</span>
+							</a>
+							<a class="link artist-pic" href="#">
+								<img src="images/photo1.webp" id="ppic2" alt="Nevve">
+							</a>
+						</div>
+						<div id="option">
+							<a class="link" href="#">
+								<div id="header-play-btn">
+									<ion-icon name="play-outline" class="play-btn icons"></ion-icon>
+									<p class="inside">LISTEN NOW</p>
+								</div>
+							</a>
+							<a class="link" href="#">
+								<div id="header-share-btn">
+									<ion-icon name="share-social-outline" class="share-btn icons"></ion-icon>
+									<p class="inside">SHARE</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</header>
+
+				<section id="first">
+					<h2>STREAM IT YOUR WAY</h2>
+					<section>
+						<div class="manual">
+							<a class="link" href="#">
+								<img src="images/player.svg" class="icons" alt="Monstercat Player">
+							</a>
+						</div>
+						<div class="manual">
+							<a class="link" href="#">
+								<ion-icon name="logo-apple" class="icons"></ion-icon>
+							</a>
+						</div>
+						<div class="manual">							
+							<a class="link" href="#">
+								<i class="fab fa-spotify icons"></i>
+							</a>
+						</div>
+						<div class="manual">							
+							<a class="link" href="#">
+								<ion-icon name="logo-youtube" class="icons"></ion-icon>
+							</a>
+						</div>
+						<div class="manual">						
+							<a class="link" href="#">								
+								<i class="fab fa-bandcamp icons"></i>
+							</a>
+						</div>
+						<div class="manual">						
+							<a class="link" href="#">
+								<ion-icon name="logo-soundcloud" class="icons"></ion-icon>
+							</a>
+						</div>
+					</section>
+				</section>
+
+				<section id="second">
+					<h3>TRACK LIST</h3>
+					<table>
+						<tr>
+							<td class="track-number">1</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>	
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">The Small Things</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:35</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">2</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Without Your Love</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:09</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">3</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Therapy</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:06</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">4</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Fighters</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:46</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">5</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Way Up</p>
+									<p class="album-artist">Conro & Nevve</p>
+								</div>
+							</td>
+							<td class="duration">3:32</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">6</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Waiting</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:07</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">7</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Dreaming</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">2:57</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">8</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Tattoo</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:29</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">9</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Out for the Night</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:05</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">10</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Overdue</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">2:48</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">11</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Say It</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">3:04</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+
+						<tr>
+							<td class="track-number">12</td>
+							<td class="play">
+								<a class="link" href="#">								
+									<ion-icon name="play-outline" class="icons"></ion-icon>									
+								</a>
+							</td>
+							<td class="track-info">
+								<div>
+									<p class="song-title">Here to Stay</p>
+									<p class="album-artist">Conro</p>
+								</div>
+							</td>
+							<td class="duration">2:44</td>
+							<td class="share">
+								<a class="link" href="#">
+									<ion-icon name="share-social-outline" class="icons"></ion-icon>
+								</a>
+								</td>
+							</a>
+						</tr>
+					</table>
+				</section>
+
+				<section id="third">
+					<h3>OTHER RELEASES LIKE THIS</h3>
+					<div>
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover5.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">			
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">FALLING FOR YOU</h6>
+								</a>
+								<p class="other-artist">Sabai, With Løve & Nevve</p>
+							</div>
+						</div>
+
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover4.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">			
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">MEMORY BANK</h6>
+								</a>
+								<p class="other-artist">Dyro x Conro</p>
+							</div>
+						</div>
+
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover3.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">	
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">LUV</h6>
+								</a>
+								<p class="other-artist">Conro</p>
+							</div>
+						</div>
+
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover2.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">			
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">YOU GOTTA BE</h6>
+								</a>
+								<p class="other-artist">Conro & LissA</p>
+							</div>
+						</div>
+
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover6.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">			
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">THE SMALL THINGS</h6>
+								</a>
+								<p class="other-artist">Conro</p>
+							</div>
+						</div>
+
+						<div class="other-releases-container">
+							<a class="link" href="#" class="track">
+								<div class="other-album-div">
+									<img src="images/cover.webp" alt="" class="other-album-cover">
+								</div>
+							</a>
+							<div class="other-song-info">				
+								<a class="link" href="#" class="track">
+									<h6 class="other-title">FIGHTERS</h6>
+								</a>
+								<p class="other-artist">Conro</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="fourth">
+					<div class="next-to-footer">
+						<a class="link" href="#">ABOUT MONSTERCAT</a>
+						<a class="link" href="#">CONTACT US</a>
+						<a class="link" href="#">CAREERS</a>
+						<a class="link" href="#">NEWS</a>
+						<a class="link" href="#">PRESS</a>
+					</div>
+					<div class="next-to-footer">
+						<a class="link" href="#">TERMS OF SERVICE</a>
+						<a class="link" href="#">PRIVACY POLICY</a>
+					</div>
+					<div class="next-to-footer">
+						<p>MONSTERCAT NEWS</p>
+						<p>Don't miss a thing, stay up to date with the latest news from us.</p>
+						<div id="email-field">
+							<input type="email" name="email" placeholder="Enter email" id="email">
+							<div id="email-click">
+								<ion-icon name="arrow-forward" class="icons"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer>
+					<div id="us">
+						<div>2021 © Monstercat, All Rights Reserved</div>
+						<div id="socials">
+							<a class="link" href="#"><ion-icon name="logo-youtube" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-instagram" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-tiktok" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-twitter" class="icons"></ion-icon></a>
+							<a class="link" href="#"><i class="fab fa-spotify icons"></i></a>
+							<a class="link" href="#"><ion-icon name="logo-apple" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-twitch" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-facebook" class="icons"></ion-icon></a>
+							<a class="link" href="#"><ion-icon name="logo-discord" class="icons"></ion-icon></a>
+							<a class="link" href="#"><img src="images/triller.svg" class="icons"></a>
+							<a class="link" href="#"><img src="images/monstercat.svg" class="icons"></a>
+						</div>
+					</div>
+					<div id="more-info">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, veritatis, adipisci. Sunt iste vero corrupti debitis, omnis illo impedit incidunt recusandae inventore fuga id harum, voluptates deserunt nihil animi voluptate atque eligendi aspernatur laboriosam enim velit in, repellat iusto! Qui.</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui perspiciatis temporibus in ab commodi repudiandae.</p>
+					</div>
+				</footer>
+			</main>
+		</div>
+	</body>
+</html>

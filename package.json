@@ -1,0 +1,15 @@
+{
+  "name": "monstercat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.9"
+  },
+  "scripts": {
+    "live-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*, !.git/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
